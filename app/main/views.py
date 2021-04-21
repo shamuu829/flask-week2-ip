@@ -26,7 +26,8 @@ def news_healines(source):
     title = "Giko"
     news_healines = get_all_news_headlines(source)
     return render_template('news_articles.html', headlines = news_healines)
-    @main.route('/search/<source_name>')
+
+@main.route('/search/<source_name>')
 def search(source_name):
     """
     View function to display search results.
